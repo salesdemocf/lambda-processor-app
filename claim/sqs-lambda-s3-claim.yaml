@@ -3,7 +3,7 @@ kind: ServerlessApp
 metadata:
   name: sqs-lambda-s3-test
 spec:
-  imageName: docker.io/salesdemocf/lambda-processor-app:latest
+  imageName: docker.io/salesdemocf/lambda-processor-app:main-d8b4622
   memorySize: 512
   resourceConfig:
     providerConfigName: aws-provider-config
