@@ -1,0 +1,10 @@
+apiVersion: awsblueprints.io/v1alpha1
+kind: ServerlessApp
+metadata:
+  name: {{ template "fullname" . }}
+spec:
+  imageName: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+  memorySize: {{.Values.memorySize }}
+  resourceConfig:
+    providerConfigName: {{ .Values.providerConfigName }}
+    region: {{ .Values.region }}

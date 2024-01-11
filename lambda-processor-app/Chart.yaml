@@ -1,0 +1,4 @@
+apiVersion: v1
+description: A Helm chart for Serverless Applications using AWS Blue Print
+name: lambda-processor-app
+version: 1.0.0
