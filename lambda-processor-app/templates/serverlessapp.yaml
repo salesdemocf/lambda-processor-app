@@ -2,6 +2,12 @@ apiVersion: awsblueprints.io/v1alpha1
 kind: ServerlessApp
 metadata:
   name: {{ template "fullname" . }}
+  labels:
+    app: {{ template "fullname" . }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
+    release: {{ .Release.Name  | quote }}
+    heritage: {{ .Release.Service  | quote }}
+    version: {{ .Values.image.tag | quote }}
 spec:
   imageName: {{ .Values.image.repository }}:{{ .Values.image.tag }}
   memorySize: {{.Values.memorySize }}

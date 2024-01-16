@@ -4,7 +4,7 @@
 # name: value
 image:
   repository: docker.io/salesdemocf/lambda-processor-app
-  tag: main-d8b4622
+  tag: main-cd4bc94
 region: us-east-1
 providerConfigName: aws-provider-config
 memorySize: 512
