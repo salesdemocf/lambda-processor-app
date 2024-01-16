@@ -1,6 +1,6 @@
 FROM public.ecr.aws/lambda/go:1
 
-LABEL version="1.0.7"
+LABEL version="1.0.9"
 
 # Copy function code
 COPY ./app /app
